@@ -1,0 +1,28 @@
+# -----------------------------
+# Core scientific packages
+# -----------------------------
+numpy==1.26.0       # Array operations
+pandas==2.1.1       # DataFrame / CSV / Excel handling
+scipy==1.11.2       # Signal processing for smoothing keypoints
+
+# -----------------------------
+# Computer vision & pose estimation
+# -----------------------------
+opencv-python==4.8.1.78  # Video frame handling, webcam display
+mediapipe==1.13.1        # Pose detection, skeleton keypoints
+
+# -----------------------------
+# Deep learning
+# -----------------------------
+tensorflow==2.14.0        # Training CNN-LSTM on laptop/Colab
+
+# -----------------------------
+# Progress bars & utilities
+# -----------------------------
+tqdm==4.66.1             # Visual progress bars
+
+# -----------------------------
+# Raspberry Pi specific (for real-time inference)
+# -----------------------------
+tflite-runtime==2.14.0   # Run TFLite model on Pi without full TF
+picamera==1.13            # Access Pi Camera module
