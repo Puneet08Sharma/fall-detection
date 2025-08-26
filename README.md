@@ -44,7 +44,7 @@ Installation
 ------------
 
    Clone Repository
-     git clone https://github.com/<USERNAME>/fall-detection.git
+     git clone https://github.com/Puneet08Sharma/fall-detection.git
      cd fall-detection
 
    Install Dependencies
@@ -137,5 +137,6 @@ Model Training Architecture
   Green text: Non-Fall
   Red text: Fall
   Supports adjustable confidence threshold.
+
 
   
