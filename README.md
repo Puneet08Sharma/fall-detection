@@ -59,26 +59,6 @@ Installation
      pandas → dataset handling
      matplotlib → visualization
 
-Project Structure
------------------
-
-  fall-detection/
-  ├── scripts/
-  │   ├── preprocess_videos.py      # Extract frames and keypoints
-  │   ├── train_model.py            # Train CNN-LSTM model
-  │   ├── h5_to_tflite.py           # Convert model to TFLite
-  │   ├── fall_detection_picam.py   # Real-time PiCam inference
-  │   └── fall_detection_webcam.py  # Webcam inference
-  ├── dataset/
-  │   ├── URFD dataset              # Processed fall/ADL frames/keypoints
-  │                                 
-  ├── models/
-  │   ├── fall_detection_model.h5
-  │   └── fall_detection_model.tflite
-  ├── README.md
-  ├── requirements.txt
-  └── .gitignore
-
 Pipeline Details
 ----------------
 
@@ -129,7 +109,7 @@ Model Training Architecture
   Use converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS, tf.lite.OpsSet.SELECT_TF_OPS] if LSTM conversion fails.
 
   Inference:
-  python scripts/fall_detection_picam.py
+  python scripts/inference_pi.py
   Captures live video from PiCam.
   Extracts keypoints per frame.
   Predicts fall/non-fall in real-time.
@@ -140,3 +120,4 @@ Model Training Architecture
 
 
   
+
